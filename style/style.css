@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.h1nefunguje{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.FarbaTextuNavBar{
+    color: white;
+}
+
+.HlavnyText{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    background-color: black;
+    width: 100%;
+}
+
+.FooterClass{
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.obrazok{
+    background-image: url('../img/EmpireLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+}
+
+.obrazok:hover{
+    background-image: url('../img/EmpireLogoRed.png');
+}
+
+/*SOCIAL LINKY*/
+.fa{
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover{
+    color: #ff0000;
+}
+
+.Prekliky{
+    color: #ff0000;
+}
+
+.Prekliky:hover{
+    color: #b00c0c;
+}
+
+.Images{
+    width: 100vw;
+    object-fit: cover;
+}
+
+.odsadenie{
+    margin-top: 200px;
+    background-color: black;
+}
+
+.cierna{
+    background-color: black;
+}
+
+.CervenyText{
+    color: #ff0000;
+}
+
+.Formular{
+    text-align: center;
+}
+
+textarea{
+    width: 300px;
+    border-radius: 15px;
+}
+
+input[type="submit"]:hover{
+    background-color: red;
+}
+
+.KontaktyText{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.KontaktyText:hover{
+    color: #b00c0c;
+}
+
+.StredStranky{
+    text-align: center;
+    margin: 200px;
+}
