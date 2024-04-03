@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/bootstrap.css">
-
+<?php
+  include_once "parts/header.php"
+  ?>
 <body class="cierna">
 
     <main class="StredStranky">
         <section>
-            <form action="domov.html">
+            <form action="domov.php">
                 <h3 class="CervenyText">Thank you for your feedback!</h3>
                 <br><input type="submit" value="Back to main page" style="border-radius: 15px; text-align: center;">
             </form>
