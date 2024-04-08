@@ -1,6 +1,7 @@
 <?php
-  include_once "parts/header.php"
-  ?>
+include_once "parts/header.php"
+    ?>
+
 <body class="cierna">
 
     <main class="StredStranky">
