@@ -31,7 +31,7 @@
         </li>
         <!-- DARK MODE SWITCH -->
         <li>
-          <label class="switch">
+          <label class="switch" style="margin-top: 6px; margin-left: 15px">
             <input type="checkbox" id="toggleTheme" <?php if(isset($_COOKIE["theme"]) && $_COOKIE["theme"] == "dark") { echo "checked"; }?>>
             <span class="slider round"></span>
           </label>

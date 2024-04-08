@@ -9,7 +9,13 @@ include_once "parts/header.php"
       ?>
   </header>
 
-  <main class="odsadenie">
+  <!-- DARK MODE PHP -->
+  <?php
+  include_once "parts/DarkMode.php"
+    ?>
+
+
+  <main class="odsadenie" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
     <section class="">
       <div class="container">
         <div class="row">
@@ -17,7 +23,7 @@ include_once "parts/header.php"
             <img src="img/HomeOne.jpeg" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
-            <h2>Republic Home One</h2>
+            <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Republic Home One</h2>
             <p>Modified MC80A Home One Type Heavy Star Cruiser of the Alliance Fleet.</p>
             <p>Price: 5.5 Million Credits</p>
           </div>
@@ -30,7 +36,7 @@ include_once "parts/header.php"
             <img src="img/Executor_BF2.png" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
-            <h2>Executor-class Star Dreadnought</h2>
+            <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Executor-class Star Dreadnought</h2>
             <p>Imperial Executor-class Star Dreadnought, flagship of Darth Vader.</p>
             <p>Price: 9 Million Credits</p>
           </div>
@@ -43,7 +49,7 @@ include_once "parts/header.php"
             <img src="img/ie5agdcmxkk81.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
-            <h2>Venator-class Cruiser</h2>
+            <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Venator-class Cruiser</h2>
             <p>Venator-class Cruiser of the Galactic Republic.</p>
             <p>Price: 1.5 Million Credits</p>
           </div>
@@ -52,6 +58,19 @@ include_once "parts/header.php"
 
     </section>
   </main>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    $("#toggleTheme").on('change', function () {
+      if ($(this).is(':checked')) {
+        document.cookie = "theme=dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+      } else {
+        document.cookie = "theme=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+      }
+      location.reload();
+    });
+  </script>
+
 </body>
 
 </html>

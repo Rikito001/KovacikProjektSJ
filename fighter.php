@@ -9,7 +9,13 @@ include_once "parts/header.php"
       ?>
   </header>
 
-  <main class="odsadenie">
+
+  <!-- DARK MODE PHP -->
+  <?php
+  include_once "parts/DarkMode.php"
+    ?>
+
+  <main class="odsadenie" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
     <section class="">
       <div class="container">
         <div class="row">
@@ -17,7 +23,7 @@ include_once "parts/header.php"
             <img src="img/Star-Wars-TIE-Fighter-Hd-Wallpaper-4k-For-Pc.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
-            <h2>TIE Fighter</h2>
+            <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">TIE Fighter</h2>
             <p>Mass produced Imperial TIE Fighter.</p>
             <p>Price: 180K Credits</p>
           </div>
@@ -30,7 +36,7 @@ include_once "parts/header.php"
             <img src="img/Star-Wars-TIE-Advanced.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
-            <h2>TIE Fighter Advanced</h2>
+            <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">TIE Fighter Advanced</h2>
             <p>Imperial TIE Fighter Advanced, limited production.</p>
             <p>Price: 350K Credits</p>
           </div>
@@ -43,7 +49,7 @@ include_once "parts/header.php"
             <img src="img/Xwing.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
-            <h2>X-Wing</h2>
+            <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">X-Wing</h2>
             <p>X-Wing Figther of the Galactic Republic and Alliance.</p>
             <p>Price: 100K Credits</p>
           </div>
@@ -52,6 +58,19 @@ include_once "parts/header.php"
 
     </section>
   </main>
+
+    <!-- DARK MODE SCRIPT -->
+    <script>
+    $("#toggleTheme").on('change', function () {
+      if ($(this).is(':checked')) {
+        document.cookie = "theme=dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+      } else {
+        document.cookie = "theme=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+      }
+      location.reload();
+    });
+  </script>
+  
 </body>
 
 </html>

@@ -9,14 +9,19 @@ include_once "parts/header.php"
             ?>
     </header>
 
-    <main>
+    <!-- DARK MODE PHP -->
+    <?php
+    include_once "parts/DarkMode.php"
+        ?>
+
+    <main style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
 
         <section class="mt-6">
             <div>
-                <h1 class="h1nefunguje">How to contact us</h1>
-                <div class="HlavnyText">
+                <h1 class="h1nefunguje" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">How to contact us</h1>
+                <div class="HlavnyText" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
                     <div>
-                        <h3>Contacts</h3>
+                        <h3 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Contacts</h3>
                         <p>Commlink Number:<a href="tel: 66 5555 501 312" class="KontaktyText"> 66 5555 501 312</a></p>
                         <p>Holonet ID: <a href="mailto: darth.sidious@azet.sk"
                                 class="KontaktyText">sheev.palpatine@azet.sk</a> </p>
@@ -25,7 +30,7 @@ include_once "parts/header.php"
 
                     <div>
                         <br>
-                        <h3>Where are we?</h3>
+                        <h3 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Where are we?</h3>
                         <img class="rounded-4" src="img/CoruscantMap.jpg" alt="" width="500px">
                     </div>
 
@@ -33,7 +38,7 @@ include_once "parts/header.php"
                         <br>
                         <div class="Formular">
                             <form action="thankyou.html">
-                                <h3>Direct e-mail</h3>
+                                <h3 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Direct e-mail</h3>
                                 <input type="text" id="" placeholder="Vaše meno"
                                     style="border-radius: 15px; text-align: center;">
                                 <br>
@@ -56,6 +61,17 @@ include_once "parts/header.php"
         </section>
 
     </main>
+      <!-- DARK MODE SCRIPT -->
+  <script>
+    $("#toggleTheme").on('change', function () {
+      if ($(this).is(':checked')) {
+        document.cookie = "theme=dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+      } else {
+        document.cookie = "theme=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+      }
+      location.reload();
+    });
+  </script>
 </body>
 
 </html>
