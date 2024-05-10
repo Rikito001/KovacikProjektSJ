@@ -5,6 +5,5 @@ $color = "#000000";
 if (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == "dark") {
     $background = "#000000";
     $color = "#fff";
-    //$h2.$color = "000000";
 }
 ?>

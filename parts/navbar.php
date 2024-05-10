@@ -27,11 +27,11 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-danger" href="kontakt.php">Contact</a>
+          <a class="nav-link text-danger" href="kontakt.php" style="margin-right: 70px">Contact</a>
         </li>
         <!-- DARK MODE SWITCH -->
         <li>
-          <label class="switch" style="margin-top: 6px; margin-left: 15px">
+          <label class="switch" style="margin-top: 6px; margin-left: -60px">
             <input type="checkbox" id="toggleTheme" <?php if(isset($_COOKIE["theme"]) && $_COOKIE["theme"] == "dark") { echo "checked"; }?>>
             <span class="slider round"></span>
           </label>
