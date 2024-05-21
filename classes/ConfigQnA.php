@@ -1,7 +1,7 @@
 <?php
 define('DATABASE', [
     'HOST' => 'localhost',
-    'DBNAME' => 'cvikasj_uloha',
+    'DBNAME' => 'projektphp',
     'PORT' => 3306,
     'USER_NAME' => 'root',
     'PASSWORD' => ''

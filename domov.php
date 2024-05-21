@@ -1,18 +1,15 @@
-<?php
-include_once "parts/header.php"
-  ?>
+<?php 
+include_once "parts/header.php";
+include_once "functions.php";
+?>
 
 <body>
   <header>
-    <?php
-    include_once "parts/navbar.php"
-      ?>
+    <?php include_once "parts/navbar.php" ?>
   </header>
 
   <!-- DARK MODE PHP -->
-  <?php
-  include_once "parts/DarkMode.php"
-    ?>
+  <?php include_once "parts/DarkMode.php" ?>
 
   <main style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
     <section>
@@ -55,7 +52,7 @@ include_once "parts/header.php"
         </div>
       </div>
 
-      <div class="accordion" id="accordionExample">
+      <!--<div class="accordion" id="accordionExample">
         <h3 class="text-center" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">F&Q
         </h3>
         <div class="accordion-item" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
@@ -97,7 +94,25 @@ include_once "parts/header.php"
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+    </section>
+
+    <section>
+      <?php
+        include_once "classes/QnA.php";
+        use otazkyodpovede\QnA;
+
+        $qna = new QnA();
+        $qna->insertQnA();
+      ?>
+    </section>
+
+
+    <section> 
+      <?php
+        $qna->displayQnA(); 
+      ?>
+    </section>
 
 
     </section>

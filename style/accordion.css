@@ -1,0 +1,29 @@
+.vec .odpoved{
+    display:none;
+}
+.otazka{
+    background-color:#f7f7f7;
+    color:black;
+    padding:2%;
+}
+
+.vec.active .odpoved{
+    display:block;
+    background-color:#f7f7f7;
+    color:black;
+    padding:2%;
+}
+
+.otazka::before {
+    content: '+ ';
+}
+
+.otazka:hover, 
+.vec.active .otazka{
+    background-color:#bfbcbc;
+    cursor:pointer;
+}
+
+.vec.active .otazka::before {
+    content: '- ';
+}

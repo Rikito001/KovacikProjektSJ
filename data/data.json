@@ -1,0 +1,89 @@
+{
+    "objednavky": {
+      "objednavka1":{
+          "produkt": "LG TV",
+          "cena": 300,
+          "mnozstvo": 5,
+          "adresa": "Nitra Jedlikova 9"
+      },
+      "objednavka2":{
+        "produkt": "Roomba",
+        "mnozstvo": 2,
+        "adresa": "Nitra Tr. A. 58",
+        "cena": 450
+      }
+    },
+  
+    
+      "otazky": [
+        "Aké sú vaše skúsenosti s PHP?",
+        "Aký je váš obľúbený programovací jazyk?",
+        "Aké sú vaše ciele pre túto stránku?",
+        "Aké je najlepšie zviera?"
+      ],
+      "odpovede": [
+        "Mám základné znalosti PHP a skúsenosti, ktoré neviem použiť.",
+        "Môj obľúbený programovací jazyk bude určite PHP. ",
+        "Mojím cieľom je prejsť tento predmet.",
+        "Odpoveď bude vždy kačica."
+      ],
+    
+      "text_banner": {
+        "banner1.jpg":"Prvý nadpis",
+        "banner2.jpg":"Druhý nadpis",
+        "banner3.jpg":"Tretí nadpis"
+      },
+      "stranky": {
+        "index": ["css/style.css", "css/slider.css"],
+        "portfolio": ["css/style.css", "css/banner.css","css/portfolio.css"],
+        "qna": ["css/style.css", "css/banner.css","css/accordion.css"],
+        "kontakt": ["css/style.css", "css/banner.css","css/form.css"],
+        "thankyou": ["css/style.css", "css/banner.css"]
+      },
+    
+      "portfolio-text": {
+        "portfolio1.jpg":"Webstránka 1",
+        "portfolio2.jpg":"Webstránka 2",
+        "portfolio3.jpg":"Webstránka 3",
+        "portfolio4.jpg":"Webstránka 4",
+        "portfolio5.jpg":"Webstránka 5",
+        "portfolio6.jpg":"Webstránka 6",
+        "portfolio7.jpg":"Webstránka 7",
+        "portfolio8.jpg":"Webstránka 8"
+      },
+    
+      "portfolio-text-url": {
+        "portfolio1.jpg": {
+          "text": "Webstránka 1",
+          "link": "https://www.php.net/manual/en/language.variables.superglobals.php"
+        },
+        "portfolio2.jpg": {
+          "text": "Webstránka 2",
+          "link": "https://github.com/mrsZemiak/sablona"
+        },
+        "portfolio3.jpg": {
+          "text": "Webstránka 3",
+          "link": "https://www.ukf.sk/"
+        },
+        "portfolio4.jpg": {
+          "text": "Webstránka 4",
+          "link": "https://www.reddit.com/r/ProgrammerHumor/comments/v4p8uc/programming_meme/"
+        },
+        "portfolio5.jpg": {
+          "text": "Webstránka 5",
+          "link": "https://www.ukf.sk/"
+        },
+        "portfolio6.jpg": {
+          "text": "Webstránka 6",
+          "link": "https://www.phptutorial.net/php-tutorial/php-heredoc/"
+        },
+        "portfolio7.jpg": {
+          "text": "Webstránka 7",
+          "link": "https://www.ukf.sk/"
+        },
+        "portfolio8.jpg": {
+          "text": "Webstránka 8",
+          "link": "https://www.ukf.sk/"
+        }
+      }
+      }
