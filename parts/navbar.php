@@ -1,13 +1,11 @@
 <nav class="navbar navbar-expand-lg bg-transparent fixed-top fs-5">
   <div class="container-fluid">
-
     <div>
       <a href="domov.php">
         <div class="obrazok">
         </div>
       </a>
     </div>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,10 +13,10 @@
     <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active text-danger" href="domov.php">Home</a>
+          <a class="nav-link active text-danger" href="domov.php" style="margin-right: 15px">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-danger" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-danger" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 15px">
             Products
           </a>
           <ul class="dropdown-menu fs-5">
@@ -27,7 +25,11 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-danger" href="kontakt.php" style="margin-right: 70px">Contact</a>
+          <a class="nav-link text-danger" href="kontakt.php" style="margin-right: 15px">Contact</a>
+        </li>
+        <!-- LOGIN LINK -->
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="login.php" style="margin-right: 70px">Login</a>
         </li>
         <!-- DARK MODE SWITCH -->
         <li>
@@ -36,7 +38,6 @@
             <span class="slider round"></span>
           </label>
         </li>
-
       </ul>
     </div>
   </div>

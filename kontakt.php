@@ -2,7 +2,7 @@
 include_once "parts/header.php"
     ?>
 
-<body class="cierna">
+<body class="odsadenie cierna">
     <header>
         <?php
         include_once "parts/navbar.php"
@@ -16,7 +16,7 @@ include_once "parts/header.php"
 
     <main style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
 
-        <section class="mt-6">
+        <section>
             <div>
                 <h1 class="h1nefunguje" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">How to contact us</h1>
                 <div class="HlavnyText" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">

@@ -1,48 +1,48 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
 
-main{
+main {
     background-color: black;
     padding-bottom: 50px;
 }
 
-.h1nefunguje{
+.h1nefunguje {
     padding: 20px;
     color: white;
     text-align: center;
 }
 
-.FarbaTextuNavBar{
+.FarbaTextuNavBar {
     color: white;
 }
 
-.HlavnyText{
+.HlavnyText {
     font-size: 20px;
     padding: 20px;
     color: white;
     text-align: center;
 }
 
-footer{
+footer {
     position: relative;
     background-color: black;
     width: 100%;
 }
 
-.FooterClass{
+.FooterClass {
     padding: 15px;
     color: white;
     text-align: center;
 }
 
-.obrazok{
+.obrazok {
     background-image: url('../img/EmpireLogo.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,69 +51,113 @@ footer{
     margin: 5px;
 }
 
-.obrazok:hover{
+.obrazok:hover {
     background-image: url('../img/EmpireLogoRed.png');
 }
 
 /*SOCIAL LINKY*/
-.fa{
+.fa {
     text-decoration: none;
     color: white;
 }
 
-.fa:hover{
+.fa:hover {
     color: #ff0000;
 }
 
-.Prekliky{
+.Prekliky {
     color: #ff0000;
 }
 
-.Prekliky:hover{
+.Prekliky:hover {
     color: #b00c0c;
 }
 
-.Images{
+.Images {
     width: 100vw;
     object-fit: cover;
 }
 
-.odsadenie{
-    margin-top: 100px;
+.odsadenie {
+    margin-top: 95px;
     background-color: white;
 }
 
-.cierna{
+.cierna {
     background-color: black;
 }
 
-.CervenyText{
+.CervenyText {
     color: #ff0000;
 }
 
-.Formular{
+.Formular {
     text-align: center;
 }
 
-textarea{
+textarea {
     width: 300px;
     border-radius: 15px;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: red;
 }
 
-.KontaktyText{
+.KontaktyText {
     text-decoration: none;
     color: #ff0000;
 }
 
-.KontaktyText:hover{
+.KontaktyText:hover {
     color: #b00c0c;
 }
 
-.StredStranky{
+.StredStranky {
     text-align: center;
     margin: 200px;
+}
+
+.boky {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.btn-primary:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.form-control {
+    background-color: #333333;
+    border: 1px solid #444444;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    background-color: #333333;
+    border-color: #ff0000;
+    box-shadow: none;
+}
+
+a {
+    color: #ff0000;
+}
+
+a:hover {
+    color: #cc0000;
 }
