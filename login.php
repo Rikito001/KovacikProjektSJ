@@ -12,7 +12,7 @@ include_once "parts/navbar.php";
         <div class="container my-5" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
             <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Login</h2>
             <br>
-            <form action="authenticate.php" method="POST">
+            <form action="classes/LoginCode.php" method="POST">
                 <div class="form-group">
                     <label for="email">Email address:</label>
                     <input type="email" class="form-control" id="email" name="email" required

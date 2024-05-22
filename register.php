@@ -3,7 +3,7 @@ include_once "parts/header.php";
 include_once "parts/navbar.php";
 ?>
 <!-- DARK MODE PHP -->
-<?php include_once "parts/DarkMode.php" ?>
+<?php include_once "parts/DarkMode.php"; ?>
 </head>
 
 <body style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
@@ -13,10 +13,16 @@ include_once "parts/navbar.php";
       style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
       <h2 style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">Register</h2>
       <br>
-      <form action="register_user.php" method="POST">
+      <form action="classes/RegisterCode.php" method="POST">
         <div class="form-group">
-          <label for="name">Full Name:</label>
+          <label for="name">First Name:</label>
           <input type="text" class="form-control" id="name" name="name" required
+            style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" class="form-control" id="surname" name="surname" required
             style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
         </div>
         <br>
@@ -27,8 +33,8 @@ include_once "parts/navbar.php";
         </div>
         <br>
         <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" name="password" required
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required
             style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
         </div>
         <br>
@@ -41,9 +47,7 @@ include_once "parts/navbar.php";
 
 <!-- DARK MODE SCRIPT -->
 <?php
-include_once "js/DarkMode.php"
-  ?>
-<?php
+include_once "js/DarkMode.php";
 include_once "parts/footer.php";
 ?>
 
