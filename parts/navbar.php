@@ -29,16 +29,21 @@
         </li>
         <!-- LOGIN LINK -->
         <li class="nav-item">
-          
-          <?php
-                session_start();
-                if(isset($_SESSION['user_id'])) {
-                  echo '<a class="nav-link text-danger" href="logout.php" style="margin-right: 70px">Log Out</a>';
-                } else {
-                  echo '<a class="nav-link text-danger" href="login.php" style="margin-right: 70px">Login</a>';
-                }
-              ?>
-        </li>
+    <?php
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+    if (isset($_SESSION['user_id'])) {
+        echo '<a class="nav-link text-danger" href="logout.php" style="margin-right: 70px">Log Out</a>';
+        if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true) {
+          echo '<a class="nav-link text-danger" href="admin.php" style="margin-right: 70px">Admin Panel</a>';
+      }
+    } else {
+        echo '<a class="nav-link text-danger" href="login.php" style="margin-right: 70px">Login</a>';
+    }
+    ?>
+</li>
         <!-- DARK MODE SWITCH -->
         <li>
           <label class="switch" style="margin-top: 6px; margin-left: -60px">
