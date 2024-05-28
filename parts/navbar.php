@@ -29,7 +29,15 @@
         </li>
         <!-- LOGIN LINK -->
         <li class="nav-item">
-          <a class="nav-link text-danger" href="login.php" style="margin-right: 70px">Login</a>
+          
+          <?php
+                session_start();
+                if(isset($_SESSION['user_id'])) {
+                  echo '<a class="nav-link text-danger" href="logout.php" style="margin-right: 70px">Log Out</a>';
+                } else {
+                  echo '<a class="nav-link text-danger" href="login.php" style="margin-right: 70px">Login</a>';
+                }
+              ?>
         </li>
         <!-- DARK MODE SWITCH -->
         <li>

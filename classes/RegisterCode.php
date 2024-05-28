@@ -51,7 +51,7 @@ class UserRegistration {
 
             $stmt->execute();
 
-            //header("Location: ../success.php");
+            header("Location: ../success.php");
             exit();
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();

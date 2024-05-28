@@ -17,7 +17,7 @@ include_once "parts/header.php"
 
   <main class="odsadenie" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
     <section class="">
-      <div class="container">
+      <div class="container mt-6"  style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
         <div class="row">
           <div class="col-md-6">
             <img src="img/HomeOne.jpeg" alt="" class="img-fluid">
@@ -30,7 +30,7 @@ include_once "parts/header.php"
         </div>
       </div>
 
-      <div class="container mt-6">
+      <div class="container mt-6" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
         <div class="row">
           <div class="col-md-6">
             <img src="img/Executor_BF2.png" alt="" class="img-fluid">
@@ -43,7 +43,7 @@ include_once "parts/header.php"
         </div>
       </div>
 
-      <div class="container mt-6">
+      <div class="container mt-6" style="background-color: <?php echo $background; ?>; color: <?php echo $color; ?>">
         <div class="row">
           <div class="col-md-6">
             <img src="img/ie5agdcmxkk81.jpg" alt="" class="img-fluid">
