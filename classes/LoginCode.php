@@ -58,7 +58,7 @@ class UserAuthentication {
                 header("Location: ../domov.php");
                 exit();
             } else {
-                throw new Exception("Invalid email or password.");
+                header("Location: ../ErrorLogin.php");
             }
         } catch (PDOException $e) {
             throw new Exception("Database error: " . $e->getMessage());
